@@ -49,6 +49,8 @@ const renderHoppyList = (hoppylist) =>{
     //duyệt qua từng phần tử củng mảng hoppylist
     for (const hoppy of hoppylist) {
         const liElement = document.createElement('li');
+        // liElement.classList.add('list-group-item list-group-item-action');
+        liElement.setAttribute('class','list-group-item list-group-item-action');
         liElement.innerText = hoppy;
 
         ulElement.appendChild(liElement);

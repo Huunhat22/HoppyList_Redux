@@ -5,19 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby List</title>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./style/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>Hobby List App - Created By Redux Original</h1>
+    <div class="mx-auto mt-3" style="max-width: 1200px;">
+        <h1 class="mb-3">Hobby List App - Created By Redux Original</h1>
 
-    <form class="hobbyFormID">
-        <label>Input New Hoppy</label>
-        <input class="hobbyTextID"></input>
-    </form>
-
-    <h2>My hoppy list</h2>
-    <ul id="HobbylistID"></ul>
+        <form class="hobbyFormID" style="max-width: 500px;">
+            <div class="mb-3">
+                <label class="form-label">Input New Hobby</label>
+                <input type="text" class="form-control hobbyTextID"></input>
+            </div>
+        </form>
+    
+        <h5>My hobby list</h5>
+        <ul id="HobbylistID" class="list-group" style="max-width: 500px;"></ul>
+    </div>
+    
 
 </body>
 <script src="https://unpkg.com/redux@4.0.5/dist/redux.js"></script>
-<script src="main.js"></script>
+<!-- <script src="main.js"></script> -->
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<!-- Third party plugin JS-->
+<!-- <script src="%PUBLIC_URL%/js/jquery.easing.min.js"></script> -->
+<!-- Core theme JS-->
+<script src="./style/js/bootstrap.min.js"></script>
+<script src="./style/js/bootstrap.bundle.js"></script>
 </html>
